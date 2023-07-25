@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ImmuLedger</title>
+    <link rel="stylesheet" href="/web-app/src/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.34/dist/web3.min.js"></script>
+  </head>
+  <body>
+    <h1>ImmuLedger</h1>
+    <div id="network-info"></div>
+    <div id="account-info"></div>
+
+    <h2>Publish Research</h2>
+    <form id="publish-form">
+      <input type="text" id="publish-title" placeholder="Research Title">
+      <input type="text" id="publish-hash" placeholder="Research Hash">
+      <button type="submit">Publish</button>
+    </form>
+
+    <h2>Lookup Research</h2>
+    <form id="lookup-form">
+      <input type="text" id="lookup-title" placeholder="Research Title">
+      <button type="submit">Lookup</button>
+    </form>
+
+    <h2>Research Details</h2>
+    <div id="research-details"></div>
+
+    <h2>All Researches</h2>
+    <table id="all-researches">
+      <tr>
+        <th>Title</th>
+        <th>Publisher</th>
+        <th>Timestamp</th>
+      </tr>
+      <!-- Researches will be dynamically inserted here -->
+    </table>
+
+    <script src="/web-app/src/components/App.js"></script>
+  </body>
+</html>
